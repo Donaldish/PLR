@@ -1,3 +1,5 @@
+-- Made by xaxa: https://github.com/xaxaxaxaxaxaxaxaxa/RobloxScripts/tree/main/Prison-Life-Remastered
+-- This is just a slight edit, nothing special.
 getgenv().configuration = {
     ToggleKey = "RightAlt", -- the key that toggles the Silent-Aim on and off (to change it, go to - https://create.roblox.com/docs/reference/engine/enums/KeyCode)
     TargetPart = "Random", -- {Head, Body, Random} The part the Silent-Aim targets on your Silent-Aim Target
@@ -67,7 +69,7 @@ setmetatable(framework, {
                     local Humanoid = FindFirstChildOfClass(Character, "Humanoid");
                     if not Humanoid or Humanoid.Health == 0 then continue end 
                     
-                    local Part = (TargetPart == "Head" and FindFirstChild(Character, "Head")) or (TargetPart == "Body" and (FindFirstChild(Character, "HumanoidRootPart") or Humanoid.RootPart)) or (TargetPart == "Random" and FindFirstChild(Character, TargetParts[random(1, #TargetParts)]));
+                    local Part = (Target == "Head" and FindFirstChild(Character, "Head")) or (TargetPart == "Body" and (FindFirstChild(Character, "HumanoidRootPart") or Humanoid.RootPart)) or (TargetPart == "Random" and FindFirstChild(Character, TargetParts[math.random(1, #TargetParts)]));
                     if not Part then continue end 
                     
                     local viewportPoint, isOnScreen = worldToViewportPoint(camera, Part.Position);
