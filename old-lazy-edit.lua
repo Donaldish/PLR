@@ -1,6 +1,6 @@
 getgenv().configuration = {
     ToggleKey = "RightAlt", -- the key that toggles the Silent-Aim on and off (to change it, go to - https://create.roblox.com/docs/reference/engine/enums/KeyCode)
-    TargetPart = "Head", -- {Head, Body, Random} The part the Silent-Aim targets on your Silent-Aim Target
+    TargetPart = "Random", -- {Head, Body, Random} The part the Silent-Aim targets on your Silent-Aim Target
     
     ShowFOVCircle = false, -- if anyone is inside this Circle, the Silent-Aim will Target them
     FOVCircleRadius = 180, -- how wide the Circle is 
